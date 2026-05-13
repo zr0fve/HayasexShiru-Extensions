@@ -18,7 +18,7 @@ const sources = [
   },
 ];
 
-const REPO_BASE = "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main";
+const REPO_BASE = "https://raw.githubusercontent.com/zr0fve/HayasexShiru-Extensions/main";
 
 // Shiru index
 const shiruIndex = sources.map((s) => ({
@@ -30,14 +30,14 @@ const shiruIndex = sources.map((s) => ({
   nsfw: s.nsfw || false,
   description: `Shiru extension for ${s.name} (custom)`,
   icon: s.icon,
-  update: "gh:ReWelp/HayasexShiru-Extensions/shiru",
+  update: "gh:zr0fve/HayasexShiru-Extensions/shiru",
 }));
 
 writeFileSync("./shiru/index.json", JSON.stringify(shiruIndex, null, 2));
 
 // Shiru package
 const shiruPackage = {
-  "name": "@rewelp/shiru-extensions",
+  "name": "@zr0fve/shiru-extensions",
   "version": "1.0.0",
   "description": "Nyaa and Sukebei extensions for Shiru",
   "license": "GPLv3",
@@ -68,7 +68,7 @@ writeFileSync("./hayase/index.json", JSON.stringify(hayaseIndex, null, 2));
 // Root index
 const rootIndex = [
   {
-    "main": "gh:ReWelp/HayasexShiru-Extensions/shiru"
+    "main": "gh:zr0fve/HayasexShiru-Extensions/shiru"
   }
 ];
 
